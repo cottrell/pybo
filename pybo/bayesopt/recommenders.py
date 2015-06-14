@@ -3,9 +3,9 @@ Recommendations.
 """
 
 # future imports
-from __future__ import division
-from __future__ import absolute_import
-from __future__ import print_function
+
+
+
 
 # local imports
 from . import solvers

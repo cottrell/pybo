@@ -3,9 +3,9 @@ Simple utilities for creating Bayesian optimization components.
 """
 
 # future imports
-from __future__ import division
-from __future__ import absolute_import
-from __future__ import print_function
+
+
+
 
 # global imports
 import inspect

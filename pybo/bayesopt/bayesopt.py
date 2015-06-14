@@ -5,9 +5,9 @@ posterior sufficient statistics.
 """
 
 # future imports
-from __future__ import division
-from __future__ import absolute_import
-from __future__ import print_function
+
+
+
 
 # global imports
 import numpy as np
@@ -187,9 +187,9 @@ def solve_bayesopt(objective,
     # initialize the data.
     info['x'][:len(X)] = X
     info['y'][:len(Y)] = Y
-    info['xbest'][:len(Y)] = [X[np.argmax(Y[:i+1])] for i in xrange(len(Y))]
+    info['xbest'][:len(Y)] = [X[np.argmax(Y[:i+1])] for i in range(len(Y))]
 
-    for i in xrange(model.ndata, niter):
+    for i in range(model.ndata, niter):
         # get the next point to evaluate.
         index = policy(model)
         x, _ = solver(index, bounds)

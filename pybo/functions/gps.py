@@ -3,9 +3,9 @@ Models which approximate a sample from a given GP.
 """
 
 # future imports
-from __future__ import division
-from __future__ import absolute_import
-from __future__ import print_function
+
+
+
 
 # global imports
 import numpy as np
