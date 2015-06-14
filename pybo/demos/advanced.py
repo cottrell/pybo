@@ -81,10 +81,11 @@ def callback(model, bounds, info, x, index, ftrue):
         ax.set_yticklabels([])
 
     pl.draw()
-    pl.show(block=False)
+    pl.ion()
+    pl.show()
 
 
-if __name__ == '__main__':
+def main():
     rng = 0                                             # random seed
     noise = 1e-1                                        # observation noise
 
@@ -120,3 +121,7 @@ if __name__ == '__main__':
         model=model,                                    # surrogate model
         rng=rng,
         callback=callback)
+
+
+if __name__ == '__main__':
+    main()

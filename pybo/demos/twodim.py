@@ -77,13 +77,14 @@ def callback(model, bounds, info, x, index, ftrue):
         ax.set_yticklabels([])
 
     pl.draw()
-    pl.show(block=False)
+    pl.ion()
+    pl.show()
 
     pl.figure(2)                                        # plot hyperparameter
     pp.plot_samples(model)                              # samples
 
     pl.draw()
-    pl.show(block=False)
+    pl.show()
 
 
 if __name__ == '__main__':

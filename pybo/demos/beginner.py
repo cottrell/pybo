@@ -22,7 +22,7 @@ sys.path.append(os.path.dirname(__file__))
 from .advanced import callback
 
 
-if __name__ == '__main__':
+def main():
     objective = pybo.functions.Sinusoidal()
 
     info = pybo.solve_bayesopt(
@@ -31,3 +31,7 @@ if __name__ == '__main__':
         noisefree=True,
         rng=0,
         callback=callback)
+
+
+if __name__ == '__main__':
+    main()

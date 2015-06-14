@@ -28,7 +28,7 @@ sys.path.append(os.path.dirname(__file__))
 from .advanced import callback
 
 
-if __name__ == '__main__':
+def main():
     rng = 0                                             # random seed
     bounds = np.array([3, 5])                           # bounds of search space
     dim = bounds.shape[0]                               # dimension of space
@@ -49,3 +49,7 @@ if __name__ == '__main__':
         noisefree=True,
         rng=rng,
         callback=callback)
+
+
+if __name__ == '__main__':
+    main()
