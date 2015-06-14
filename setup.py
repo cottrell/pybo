@@ -13,7 +13,7 @@ setup(name='pybo',
       license='Simplified BSD',
       packages=find_packages(),
       package_data={'': ['*.txt', '*.npz']},
-      install_requires=['numpy', 'scipy', 'matplotlib', 'mwhutils', 'pygp'],
+      install_requires=['numpy', 'scipy', 'matplotlib>=1.4.3', 'mwhutils', 'pygp'],
       dependency_links=['git+https://github.com/mwhoffman/mwhutils.git#egg=mwhutils',
           'git+https://github.com/mwhoffman/pygp.git#egg=pygp']
       )
