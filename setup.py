@@ -14,6 +14,9 @@ setup(name='pybo',
       packages=find_packages(),
       package_data={'': ['*.txt', '*.npz']},
       install_requires=['numpy', 'scipy', 'matplotlib>=1.4.3', 'mwhutils', 'pygp'],
+      # hacked 2to3 versions here:
+      # dependency_links=['git+https:https://github.com/cottrell/mwhutils#egg=mwhutils',
+      #     'git+https:https://github.com/cottrell/pygp#egg=pygp']
       dependency_links=['git+https://github.com/mwhoffman/mwhutils.git#egg=mwhutils',
           'git+https://github.com/mwhoffman/pygp.git#egg=pygp']
       )
